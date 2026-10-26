@@ -1,0 +1,14 @@
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\bin\Debug\net10.0\ThreeProblems.exe
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\bin\Debug\net10.0\ThreeProblems.deps.json
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\bin\Debug\net10.0\ThreeProblems.runtimeconfig.json
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\bin\Debug\net10.0\ThreeProblems.dll
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\bin\Debug\net10.0\ThreeProblems.pdb
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.AssemblyInfoInputs.cache
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.AssemblyInfo.cs
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.csproj.CoreCompileInputs.cache
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.dll
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\refint\ThreeProblems.dll
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.pdb
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ThreeProblems.genruntimeconfig.cache
+C:\Users\peter\CSC1250\lab06-threee-problems\ThreeProblems\obj\Debug\net10.0\ref\ThreeProblems.dll
