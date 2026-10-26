@@ -54,12 +54,12 @@ while (choice != QUIT_OPTION)
 
     
     //Using separate 'if' statements for the choices
-    if (choice == 1)
+    if (choice == 1 || choice == 4)
     {
         //Exercise 1 - The Grade Checker
         //Displaying the Header for Exercise 1
         System.Console.WriteLine("=== Exercise 1: The Grade Checker ===");
-        
+
         //Asking for the scores
         int score = 0;
         System.Console.Write("Score: ");
@@ -104,7 +104,7 @@ while (choice != QUIT_OPTION)
         System.Console.WriteLine(" ");
     }
 
-    if (choice == 2)
+    if (choice == 2 || choice == 4)
     {
         //Exercise 2
         //Initializing the roll counter
@@ -156,15 +156,16 @@ while (choice != QUIT_OPTION)
             //Asking the user if they want to roll again
             System.Console.Write("Do you want to roll again? (y/n)");
             playAgain = System.Console.ReadLine().ToLower();
-            System.Console.WriteLine(" ");
+        
         }
     
      //Displaying the total rolls and wins
      System.Console.WriteLine($"\nGame Over!");
      System.Console.WriteLine($"You rolled {rollCounter} and won {winCounter}");
+     System.Console.WriteLine(" ");
     }
 
-    if (choice == 3)
+    if (choice == 3 || choice == 4)
     {
         //Exercise 3
         //Creating an array capable of storing five scores
@@ -223,5 +224,14 @@ while (choice != QUIT_OPTION)
         System.Console.WriteLine(" ");
     }
 
+
+    if (choice == QUIT_OPTION)
+    {
+        //Printing Goodbye
+        System.Console.WriteLine("Goodbye!");
+
+        //Ending the menu
+        break;
+    }
 }
 
