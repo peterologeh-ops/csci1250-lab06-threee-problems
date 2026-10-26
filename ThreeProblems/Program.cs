@@ -10,6 +10,9 @@
 
 
 //Constants for the menu
+using System.Runtime.CompilerServices;
+using System.Xml.Schema;
+
 const int QUIT_OPTION = 5;
 
 //A menu that repeats until the user chooses to quit
@@ -38,5 +41,53 @@ while (choice != QUIT_OPTION)
         System.Console.Write("Choose 1 through 5: ");
         choice = Convert.ToInt32(System.Console.ReadLine());
 
+    }
+
+    
+    //Using separate 'if' statements for the choices
+    if (choice == 1)
+    {
+        //Exercise 1 - The Grade Checker
+        //Asking for the scores
+        int score = 0;
+        System.Console.Write("Enter a score (0=100): ");
+        score = Convert.ToInt32(System.Console.ReadLine());
+
+        //Repeats asking for score when the input is invalid
+        while (score < 0 || score > 100)
+        {
+            //Printing the validation error
+            System.Console.WriteLine("Invalid score! Please enter a value between 0 and 100.");
+
+            //Asking for another score
+            System.Console.Write("Enter a score (0-100): ");
+            score = Convert.ToInt32(System.Console.ReadLine());
+        }
+
+        //Determining the letter grade
+        string grade = "";
+        if (score >= 90)
+        {
+            grade = "A";
+        }
+        else if (score >= 80)
+        {
+            grade = "B";
+        }
+        else if (score >= 70)
+        {
+            grade = "C";
+        }
+        else if (score >= 60)
+        {
+            grade = "D";
+        }
+        else
+        {
+            grade = "F";
+        }
+
+        //Displaying the grade
+        System.Console.WriteLine($"{score} earns a {grade}");
     }
 }
