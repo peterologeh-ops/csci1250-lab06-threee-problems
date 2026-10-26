@@ -10,13 +10,19 @@
 
 
 //Constants for the menu
+using System.Diagnostics;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Xml.Schema;
 
 const int QUIT_OPTION = 5;
 
+//Random number generator
+Random rng = new Random(4000);
+
 //A menu that repeats until the user chooses to quit
 int choice = 0;
+
 while (choice != QUIT_OPTION)
 {
     // Displaying the five menu options
@@ -89,5 +95,63 @@ while (choice != QUIT_OPTION)
 
         //Displaying the grade
         System.Console.WriteLine($"{score} earns a {grade}");
+     }
+
+
+    if (choice == 2)
+    {
+        //Exercise 2
+        //Initializing the roll counter
+        int rollCounter = 0;
+
+        //Initializing the win counter
+        int winCounter = 0;
+
+        //Continue rolling until the player chooses to stop
+        string playAgain = "y";
+        while (playAgain == "y")
+        {
+            //Generating two dice values
+            int die1 = rng.Next(1, 7);
+            int die2 = rng.Next(1, 7);
+
+            //Calculating the total
+            int total = die1 + die2;
+
+            //Increasing the roll number
+            rollCounter++;
+
+            //Displaying the roll number, dice, and the total
+            System.Console.WriteLine($"Roll {rollCounter}: You rolled {die1} and {die2}. Total = {total}");
+
+            //Checking for snake eyes FIRST
+            if (die1 == 1 && die2 == 1)
+            {
+                //Printing Snake Eyes
+                System.Console.WriteLine("Snake Eyes!");
+            }
+            else if (die1 == die2)
+            {
+                //Printing Doubles
+                System.Console.WriteLine("Doubles!");
+            }
+            else if (total == 7 || total == 11)
+            {
+                //Printing winner
+                System.Console.WriteLine("Winner!");
+
+                //Increasing the win counter
+                winCounter++;
+            }
+
+            //Asking the user if they want to roll again
+            System.Console.Write("Do you want to roll again? (y/n)");
+            playAgain = System.Console.ReadLine().ToLower();
+        }
+    
+    //Displaying the total rolls and wins
+    System.Console.WriteLine($"\nGame Over!");
+    System.Console.WriteLine($"Total Rolls: {rollCounter}");
+    System.Console.WriteLine($"Total Wins: {winCounter}");
     }
 }
